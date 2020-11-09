@@ -1,3 +1,5 @@
+// to run - canvas-sketch sketch.js
+
 // Ensure ThreeJS is in global scope for the 'examples/'
 global.THREE = require("three");
 
@@ -73,7 +75,7 @@ const sketch = ({ context }) => {
 
   const light = new THREE.PointLight('white', 1.2)
   light.position.set(3, 3, 3);
-  scene.add(light)
+  earthGroup.add(light)
 
   // helpers
   // light
